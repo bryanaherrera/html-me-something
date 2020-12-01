@@ -1,5 +1,5 @@
 :root{
-    background: #ffffff;
+    background:		#f8f8ff;
     --mainColor: #023047;
     --secondColor: #219EBC;
     --thirdColor: #8ECAE6;
@@ -43,8 +43,8 @@ h1{
 }
 
 img{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .container{
@@ -54,12 +54,14 @@ img{
 }
 
 .container-pic{
-    float: left
+    float: left;
+    width: 400px;
+    height: 400px;    
+    padding-right: 50px;
 }
 
 .container-pic img{
     display: block;
-    padding-right: 50px;
 }
 
 .container-info{
@@ -120,6 +122,26 @@ footer i{
 
 footer i:hover:not(:focus){
     color: var(--fifthColor);
+}
+
+@media(max-width: 1040px){
+    .container-pic{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container-pic img{
+        /* text-align: center; */
+        margin-left: auto;
+        margin-right: 80px;
+    }
+    
+    .container-info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 
